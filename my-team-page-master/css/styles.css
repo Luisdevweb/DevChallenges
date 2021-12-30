@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%, 1);
+  font-family: "Poppins", sans-serif;
+}
+.team {
+  padding: 4em 1em;
+}
+.team__content {
+  margin-bottom: 6em;
+}
+.team__title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+.team__subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.team__description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-right: 2em;
+}
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+.member {
+  position: relative;
+  width: 150px;
+  margin-bottom: 2em;
+}
+.member:nth-of-type(2n) {
+  margin-top: 5em;
+}
+.member__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.member__rol {
+  position: absolute;
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  inline-size: 10rem;
+  writing-mode: vertical-rl;
+  top: 0;
+  right: -1.5rem;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.attribution {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
