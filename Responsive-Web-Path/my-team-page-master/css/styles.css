@@ -13,13 +13,36 @@ body {
 .team {
   padding: 4em 1em;
 }
-.team__content {
+@media screen and (min-width: 576px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .team {
+    width: 510px;
+    padding: 0;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex-basis: 50%;
+  }
+}
+.team__info {
   margin-bottom: 6em;
 }
 .team__title {
   font-family: "PT Serif", serif;
   font-weight: 700;
   font-size: 3.6rem;
+}
+@media screen and (min-width: 576px) {
+  .team__title {
+    font-size: 2.5rem;
+  }
 }
 .team__subtitle {
   font-size: 1.8rem;
@@ -31,19 +54,62 @@ body {
   font-weight: 400;
   padding-right: 2em;
 }
-.team__members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 2em;
+@media screen and (min-width: 340px) {
+  .team__members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 2em;
+  }
 }
+@media screen and (min-width: 576px) {
+  .team__members {
+    width: 500px;
+  }
+  .team__description {
+    padding-right: 0;
+  }
+}
+
 .member {
   position: relative;
-  width: 150px;
+  width: 90%;
   margin-bottom: 2em;
 }
-.member:nth-of-type(2n) {
-  margin-top: 5em;
+@media screen and (min-width: 340px) {
+  .member {
+    width: 135px;
+  }
+  .member:nth-of-type(2n) {
+    margin-top: 5em;
+  }
+}
+@media screen and (min-width: 576px) {
+  .member:nth-of-type(2n) {
+    margin-top: 0;
+  }
+  .member:nth-of-type(2),
+  .member:nth-of-type(5) {
+    margin-top: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .team {
+    width: 100%;
+  }
+  .row {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__members {
+    width: 798px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .member {
+    width: 200px;
+  }
 }
 .member__name {
   font-size: 1.4rem;
@@ -64,6 +130,16 @@ body {
 .footer {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    padding-left: 2em;
+  }
 }
 .attribution {
   font-size: 1.4rem;
