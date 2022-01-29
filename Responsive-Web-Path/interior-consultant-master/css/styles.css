@@ -1,0 +1,12 @@
+body {
+  background: hsla(270, 4%, 9%, 1);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif; */

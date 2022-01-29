@@ -1,4 +1,4 @@
-<h1 align="center">my-team-page-master</h1>
+<h1 align="center">interior-consultant-master</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot](./design/team.jpg)
+![screenshot](./design/interior-desktop.jpg)
 
 ### Built With
 
