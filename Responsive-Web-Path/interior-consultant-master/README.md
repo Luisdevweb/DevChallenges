@@ -52,5 +52,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@luismac09](https://{github.com/your-usermame})
-- Twitter [@lui*Mac*](https://{twitter.com/your-username})
+- GitHub [@luismac09](https://github.com/luismac09)
+- Twitter [@luismac09](https://twitter.com/luismac09)
