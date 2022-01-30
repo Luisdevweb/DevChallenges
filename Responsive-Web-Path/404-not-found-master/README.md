@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/404-not-found-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/ySVmIV5o9gPqTUH38z1o">
       Solution
     </a>
     <span> | </span>
@@ -52,5 +52,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@luismac09](https://{github.com/your-usermame})
-- Twitter [@lui*Mac*](https://{twitter.com/your-username})
+- GitHub [@luismac09](https://github.com/luismac09)
+- Twitter [@Luismac09](https://twitter.com/luismac09)
