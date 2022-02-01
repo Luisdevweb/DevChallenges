@@ -31,7 +31,16 @@ a {
   border: none;
   outline: none;
 }
-
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .header {
   display: flex;
   align-items: center;
@@ -52,6 +61,51 @@ a {
 .icon-menu {
   font-size: 4rem;
   color: var(--grayverylighter);
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  z-index: 10;
+  transform: translateX(110%);
+}
+.navbar--translate {
+  transform: translateX(0);
+}
+.container-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.icon-close {
+  font-size: 3rem;
+}
+.menu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu__item {
+  margin-bottom: 2.5em;
+}
+.menu__item:last-of-type {
+  margin-bottom: 0;
+}
+.menu__link {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 0.2em;
+}
+.menu__link--active {
+  font-weight: 700;
+  border-bottom: 2px solid var(--white);
 }
 
 .body__title {
@@ -78,19 +132,26 @@ a {
   margin-bottom: 2em;
 }
 
-.sample {
+.design-sample {
   position: relative;
+  margin-bottom: 6em;
 }
 
 .profile {
   position: absolute;
-  bottom: -8.8em;
+  bottom: -5em;
   left: 4em;
   width: 82%;
   padding: 0.5em 1em;
   background-color: var(--background);
   border: 1px solid var(--shadow);
   box-shadow: 0 4px 4px var(--shadow);
+}
+@media screen and (min-width: 340px) {
+  .profile {
+    bottom: -8.8em;
+    left: 4em;
+  }
 }
 .photo-container {
   width: 62px;
@@ -122,7 +183,7 @@ a {
   margin: 0;
 }
 
-.sample__text {
+.profile__text {
   margin-top: 0.5em;
   inline-size: 21rem;
   font-size: 1.8rem;
@@ -132,16 +193,24 @@ a {
 }
 
 .footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  padding-top: 4em;
 }
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--graylighter);
 }
 .copyright span {
   font-weight: 700;
+}
+@media screen and (min-width: 340px) {
+  .footer {
+    width: 100%;
+    /* position: fixed; */
+    /* bottom: 0; */
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
 }

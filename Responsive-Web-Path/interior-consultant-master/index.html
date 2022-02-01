@@ -11,7 +11,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="https://devchallenges.io/"
+      href="images/devchallenges.png"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -27,47 +27,79 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo">this interior</h1>
-      <span class="icon-menu material-icons"> menu </span>
-    </header>
-    <main class="body">
-      <h2 class="body__title">Modern interior</h2>
-      <p class="body__text">
-        A full-Service residential & commercial interior design and staging
-        company offering professional organizing & eco-services.
-      </p>
-      <a class="body__link" href="#">
-        Read more
-        <span class="icon-arrow material-icons"> trending_flat </span></a
-      >
-      <div class="sample">
-        <figure class="image-container">
-          <img class="sample__image" src="images/photo1.png" alt="photo1" />
-        </figure>
-        <div class="profile">
-          <div class="profile__content">
-            <figure class="photo-container">
-              <img
-                class="profile__photo"
-                src="images/photo2.png"
-                alt="photo2"
-              />
-            </figure>
-            <div class="creator">
-              <p class="creator__name">Aliza Webber</p>
-              <p class="creator__job">Interior Designer</p>
-            </div>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="logo">this interior</h1>
+        <span id="icon-menu" class="icon-menu material-icons"> menu </span>
+        <nav id="nav-bar" class="navbar">
+          <div class="container-close">
+            <span id="icon-close" class="icon-close material-icons">
+              close
+            </span>
           </div>
-          <p class="sample__text">Designed in 2020 by Aliza webber</p>
-        </div>
-      </div>
-    </main>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#" title="Home"
+                >Home</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#" title="collection">collection</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#" title="About">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#" title="Contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <footer class="footer">
-      <p class="copyright">
-        &copy;2022 created by <span>Luismac</span>- devChallenges.io
-      </p>
-    </footer>
+      <main class="body">
+        <h2 class="body__title">Modern interior</h2>
+        <p class="body__text">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <a class="body__link" href="#">
+          Read more
+          <span class="icon-arrow material-icons"> trending_flat </span></a
+        >
+        <div class="design-sample">
+          <figure class="image-container">
+            <img
+              class="design-sample__image"
+              src="images/photo1.png"
+              alt="photo1"
+            />
+          </figure>
+          <div class="profile">
+            <div class="profile__content">
+              <figure class="photo-container">
+                <img
+                  class="profile__photo"
+                  src="images/photo2.png"
+                  alt="photo2"
+                />
+              </figure>
+              <div class="creator">
+                <p class="creator__name">Aliza Webber</p>
+                <p class="creator__job">Interior Designer</p>
+              </div>
+            </div>
+            <p class="profile__text">Designed in 2020 by Aliza webber</p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="copyright">
+          &copy;2022 created by <span>Luismac</span>- devChallenges.io
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
