@@ -30,8 +30,14 @@
     <main class="wrapper">
       <header class="header">
         <h1 class="logo">this interior</h1>
+        <nav class="navbar">
+          <a class="link link--active">Home</a>
+          <a class="link">Collection</a>
+          <a class="link">About</a>
+          <a class="link">Contact</a>
+        </nav>
         <span id="icon-menu" class="icon-menu material-icons"> menu </span>
-        <nav id="nav-bar" class="navbar">
+        <nav id="nav-bar" class="navbar-mobile">
           <div class="container-close">
             <span id="icon-close" class="icon-close material-icons">
               close
@@ -39,59 +45,67 @@
           </div>
           <ul id="menu" class="menu">
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#" title="Home"
-                >Home</a
-              >
+              <a class="link link--active" href="#" title="Home">Home</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="collection">collection</a>
+              <a class="link" href="#" title="collection">collection</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="About">About</a>
+              <a class="link" href="#" title="About">About</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Contact">contact</a>
+              <a class="link" href="#" title="Contact">contact</a>
             </li>
           </ul>
         </nav>
       </header>
 
       <section class="main">
-        <div class="content">
-          <h2 class="content__title">Modern interior</h2>
-          <p class="content__text">
-            A full-Service residential & commercial interior design and staging
-            company offering professional organizing & eco-services.
-          </p>
-          <a class="content__link" href="#">
-            Read more
-            <span class="icon-arrow material-icons"> trending_flat </span></a
-          >
-        </div>
-
-        <div class="design-sample">
-          <figure class="image-container">
-            <img
-              class="design-sample__image"
-              src="images/photo1.png"
-              alt="photo1"
-            />
-          </figure>
-          <div class="profile">
-            <div class="profile__content">
-              <figure class="photo-container">
-                <img
-                  class="profile__photo"
-                  src="images/photo2.png"
-                  alt="photo2"
-                />
-              </figure>
-              <div class="creator">
-                <p class="creator__name">Aliza Webber</p>
-                <p class="creator__job">Interior Designer</p>
+        <div class="row">
+          <div class="column">
+            <div class="column-centered">
+              <div class="content">
+                <h2 class="content__title">Modern interior</h2>
+                <p class="content__text">
+                  A full-Service residential & commercial interior design and
+                  staging company offering professional organizing &
+                  eco-services.
+                </p>
+                <a class="content__link" href="#">
+                  Read more
+                  <span class="icon-arrow material-icons">
+                    trending_flat
+                  </span></a
+                >
               </div>
             </div>
-            <p class="profile__text">Designed in 2020 by Aliza webber</p>
+          </div>
+          <div class="column">
+            <div class="design-sample">
+              <figure class="image-container">
+                <img
+                  class="design-sample__image"
+                  src="images/photo1.png"
+                  alt="photo1"
+                />
+              </figure>
+              <div class="profile">
+                <div class="profile__content">
+                  <figure class="photo-container">
+                    <img
+                      class="profile__photo"
+                      src="images/photo2.png"
+                      alt="photo2"
+                    />
+                  </figure>
+                  <div class="creator">
+                    <p class="creator__name">Aliza Webber</p>
+                    <p class="creator__job">Interior Designer</p>
+                  </div>
+                </div>
+                <p class="profile__text">Designed in 2020 by Aliza webber</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
