@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/interior-consultant-master/">
       Demo
     </a>
     <span> | </span>
