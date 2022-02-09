@@ -1,4 +1,4 @@
-<h1 align="center">my-team-page-master</h1>
+<h1 align="center">recipe-page-master</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,16 +6,16 @@
 
 <div align="center">
   <h3>
-    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/my-team-page-master/">
+    <a href="#">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/MwwC3o4nzM8XvVUoVsiE">
+    <a href="#">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
+    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
+      Challenge 
     </a>
   </h3>
 </div>
@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot](./design/team.jpg)
+![screenshot](./design/recipe-blog-desktop.jpg)
 
 ### Built With
 

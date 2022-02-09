@@ -14,7 +14,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
+    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
       Challenge
     </a>
   </h3>
@@ -40,6 +40,7 @@
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [JS](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Features
 

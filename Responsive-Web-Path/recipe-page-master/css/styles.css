@@ -1,0 +1,11 @@
+:root {
+  --fontprimary: "Montserrat", sans-serif;
+  --fontsecondary: "Playfair Display", serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+img[class^="icon-"] {
+  width: 25px;
+}
