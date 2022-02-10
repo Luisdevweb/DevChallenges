@@ -25,44 +25,55 @@
       </p>
       <div class="dessert">
         <img class="dessert__image" src="images/photo1.png" alt="photo cake" />
+
         <div class="servings">
           <img
-            src="images/local_dining_black.svg"
+            src="images/local_dining_orange.svg"
             class="icon-dining"
             alt="local-dining"
           />
-          <p>yields</p>
-          <p>12 servings</p>
+          <div>
+            <p class="text-uppercase">yields</p>
+            <p class="color-orange">12 servings</p>
+          </div>
         </div>
 
-        <div class="prep-time">
-          <img
-            src="images/query_builder_black.svg"
-            class="icon-query-builder"
-            alt="query-builder"
-          />
-          <p>prep time</p>
-          <p>45 minutes</p>
-        </div>
+        <div class="duration">
+          <div class="duration__content">
+            <img
+              src="images/query_builder_gray.svg"
+              class="icon-query-builder"
+              alt="query-builder"
+            />
+            <div>
+              <p class="text-uppercase">prep time</p>
+              <p>45 minutes</p>
+            </div>
+          </div>
 
-        <div class="cook-time">
-          <img
-            src="images/query_builder_black.svg"
-            class="icon-query-builder"
-            alt="query-builder"
-          />
-          <p>cook time</p>
-          <p>1 hour</p>
-        </div>
+          <div class="duration__content">
+            <img
+              src="images/query_builder_gray.svg"
+              class="icon-query-builder"
+              alt="query-builder"
+            />
+            <div>
+              <p class="text-uppercase">cook time</p>
+              <p>1 hour</p>
+            </div>
+          </div>
 
-        <div class="total-time">
-          <img
-            src="images/query_builder_black.svg"
-            class="icon-query-builder"
-            alt="query-builder"
-          />
-          <p>total time</p>
-          <p>7.75 hours</p>
+          <div class="duration__content">
+            <img
+              src="images/query_builder_gray.svg"
+              class="icon-query-builder"
+              alt="query-builder"
+            />
+            <div class="duration__text">
+              <p class="text-uppercase">total time</p>
+              <p>7,75 hours</p>
+            </div>
+          </div>
         </div>
       </div>
       <section class="section">
@@ -71,20 +82,29 @@
           <h3 class="ingredients__title">Graham cracker crust</h3>
           <ul class="list">
             <li class="list__item">
-              <label for="check1"><input type="checkbox" id="check1" /></label>
+              <form class="form">
+                <input type="checkbox" id="check1" class="form__input" />
+                <label class="form__label" for="check1"></label>
+              </form>
               <p class="ingredient">
                 1 and 1/2 cups (150g) <span>graham cracker crumbs</span> (about
                 10 full sheet graham crackers )
               </p>
             </li>
             <li class="list__item">
-              <label for="check2"><input type="checkbox" id="check2" /></label>
+              <form class="form">
+                <input type="checkbox" id="check2" class="form__input" />
+                <label class="form__label" for="check2"></label>
+              </form>
               <p class="ingredient">
                 5 Tablespoons (70g) <span>unsalted butter</span>, melted
               </p>
             </li>
             <li class="list__item">
-              <label for="check3"><input type="checkbox" id="check3" /></label>
+              <form class="form">
+                <input type="checkbox" id="check3" class="form__input" />
+                <label class="form__label" for="check3"></label>
+              </form>
               <p class="ingredient">
                 1/4 cup (50g) <span>granulated sugar</span>
               </p>
@@ -95,51 +115,70 @@
           <h3 class="ingredients__title">Cheesecake</h3>
           <ul class="list">
             <li class="list__item">
-              <label for="check4"><input type="checkbox" id="check4" /></label>
+              <form class="form">
+                <input type="checkbox" id="check4" class="form__input" />
+                <label class="form__label" for="check4"></label>
+              </form>
               <p class="ingredient">
                 four 8-ounce blocks (904g) full-fat <span>cream cheese</span>,
                 softened to room temperature
               </p>
             </li>
             <li class="list__item">
-              <label for="check5"><input type="checkbox" id="check5" /></label>
+              <form class="form">
+                <input type="checkbox" id="check5" class="form__input" />
+                <label class="form__label" for="check5"></label>
+              </form>
               <p class="ingredient">
                 1 cup (200g) <span>granulated sugar</span>
               </p>
             </li>
             <li class="list__item">
-              <label for="check6"><input type="checkbox" id="check6" /></label>
+              <form class="form">
+                <input type="checkbox" id="check6" class="form__input" />
+                <label class="form__label" for="check6"></label>
+              </form>
               <p class="ingredient">
                 1 cup (240g) full-fat <span>sour cream</span> , at room
                 temperature
               </p>
             </li>
             <li class="list__item">
-              <label for="check7"><input type="checkbox" id="check7" /></label>
+              <form class="form">
+                <input type="checkbox" id="check7" class="form__input" />
+                <label class="form__label" for="check7"> </label>
+              </form>
               <p class="ingredient">
                 1 teaspoon <span>pure vanilla extract</span>
               </p>
             </li>
             <li class="list__item">
-              <label for="check8"><input type="checkbox" id="check8" /></label>
+              <form class="form">
+                <input type="checkbox" id="check8" class="form__input" />
+                <label class="form__label" for="check8"></label>
+              </form>
               <p class="ingredient">
                 2 teaspoons <span>fresh lemon juice</span> (optional, but
                 recommended)
               </p>
             </li>
             <li class="list__item">
-              <label for="check9"><input type="checkbox" id="check9" /></label>
+              <form class="form">
+                <input type="checkbox" id="check9" class="form__input" />
+                <label class="form__label" for="check9"></label>
+              </form>
               <p class="ingredient">
                 3 large <span>eggs</span>, at room temperature
               </p>
             </li>
             <li class="list__item">
-              <label for="check10"
-                ><input type="checkbox" id="check10"
-              /></label>
+              <form class="form">
+                <input type="checkbox" id="check10" class="form__input" />
+                <label class="form__label" for="check10"></label>
+              </form>
               <p class="ingredient">
                 topping suggestions:
-                <span
+                <span class="ingredient__text"
                   >salted caramel, lemon curd, strawberry topping, chocolate
                   ganache, red wine chocolate ganache, fresh fruit, whipped
                   cream, or raspberry sauce</span
@@ -150,31 +189,36 @@
           </ul>
         </article>
       </section>
-      <section class="section">
-        <h2 class="section__title">Instructions</h2>
+      <section class="instructions">
+        <h2 class="instructions__title">Instructions</h2>
         <ol class="list">
           <li class="list__item">
+            <p class="number"><span>1</span></p>
             <p class="instruction">
               Adjust the oven rack to the lower-middle position and preheat oven
               to 350°F (177°C).
             </p>
           </li>
           <li class="list__item">
-            <p class="instruction">
-              <span>Make the crust</span>: Using a food processor, pulse the
-              graham crackers into crumbs. Pour into a medium bowl and stir in
-              sugar and melted butter until combined. (You can also pulse it all
-              together in the food processor.) Mixture will be sandy. Press
-              firmly into the bottom and slightly up the sides of a 9-inch or
-              10-inch springform pan. No need to grease the pan first. I use the
-              bottom of a measuring cup to pack the crust down tightly. Pre-bake
-              for 8 minutes. Remove from the oven and place the hot pan on a
-              large piece of aluminum foil. The foil will wrap around the pan
-              for the water bath in step 4. Allow crust to slightly cool as you
-              prepare the filling.
-            </p>
+            <p class="number"><span>2</span></p>
+            <div>
+              <p class="instruction">
+                <span>Make the crust</span>: Using a food processor, pulse the
+                graham crackers into crumbs. Pour into a medium bowl and stir in
+                sugar and melted butter until combined. (You can also pulse it
+                all together in the food processor.) Mixture will be sandy.
+                Press firmly into the bottom and slightly up the sides of a
+                9-inch or 10-inch springform pan. No need to grease the pan
+                first. I use the bottom of a measuring cup to pack the crust
+                down tightly. Pre-bake for 8 minutes. Remove from the oven and
+                place the hot pan on a large piece of aluminum foil. The foil
+                will wrap around the pan for the water bath in step 4. Allow
+                crust to slightly cool as you prepare the filling.
+              </p>
+            </div>
           </li>
           <li class="list__item">
+            <p class="number"><span>3</span></p>
             <p class="instruction">
               <span>Make the filling</span> Using a handheld or stand mixer
               fitted with a paddle attachment, beat the cream cheese and
@@ -189,6 +233,7 @@
             </p>
           </li>
           <li class="list__item">
+            <p class="number"><span>4</span></p>
             <p class="instruction">
               <span>Prepare the simple water bath (see note)</span> Boil a pot
               of water. You need 1 inch of water in your roasting pan for the
@@ -203,6 +248,7 @@
             </p>
           </li>
           <li class="list__item">
+            <p class="number"><span>5</span></p>
             <p class="instruction">
               Bake cheesecake for 55-70 minutes or until the center is almost
               set. When it’s done, the center of the cheesecake will slightly
@@ -214,6 +260,7 @@
             </p>
           </li>
           <li class="list__item">
+            <p class="number"><span>6</span></p>
             <p class="instruction">
               Use a knife to loosen the chilled cheesecake from the rim of the
               springform pan, then remove the rim. Using a clean sharp knife,
@@ -222,20 +269,21 @@
             </p>
           </li>
           <li class="list__item">
+            <p class="number"><span>7</span></p>
             <p class="instruction">
               Serve cheesecake with desired toppings. Cover and store leftover
               cheesecake in the refrigerator for up to 5 days.
             </p>
           </li>
         </ol>
-        <p class="source">
-          <span>Source: </span
-          >https://sallysbakingaddiction.com/classic-cheesecake/
-        </p>
+        <div class="source">
+          <p>Source:</p>
+          <span>https://sallysbakingaddiction.com/classic-cheesecake/</span>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="copy">created by username - devChallenges.io</p>
+      <p class="copy">created by <span>username </span> - devChallenges.io</p>
     </footer>
   </body>
 </html>

@@ -1,11 +1,185 @@
 :root {
   --fontprimary: "Montserrat", sans-serif;
   --fontsecondary: "Playfair Display", serif;
+  --fontsize: 10px;
+  --background: hsla(0, 0%, 98%, 1);
+  --graydarker: hsla(0, 0%, 20%, 1);
+  --graydark: hsla(0, 0%, 31%, 1);
+  --gray: hsla(0, 0%, 51%, 1);
+  --graylighter: hsla(0, 0%, 74%, 1);
+  --orange: hsla(28, 87%, 62%, 1);
+  --black: hsla(0, 0%, 0%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+html {
+  font-size: var(--fontsize);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 img {
   display: block;
   width: 100%;
 }
 img[class^="icon-"] {
-  width: 25px;
+  width: 20px;
+  margin-right: 0.6em;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--fontsecondary);
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fontprimary);
+  background-color: var(--background);
+  font-weight: 500;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--graylighter);
+}
+.color-orange {
+  color: var(--orange);
+}
+
+.recipe {
+  padding: 1em;
+  margin-bottom: 6em;
+}
+.recipe__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.recipe__note {
+  position: relative;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--graydark);
+  padding: 0 2em;
+}
+.recipe__note::before {
+  position: absolute;
+  content: "";
+  top: 0.2em;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/6dots.svg);
+  background-repeat: no-repeat;
+}
+
+.dessert {
+  padding-top: 2.5em;
+  margin-bottom: 3em;
+}
+.dessert__image {
+  border-radius: 1.2rem;
+  margin-bottom: 3em;
+}
+.servings {
+  display: flex;
+  margin-bottom: 2em;
+}
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3.2em;
+}
+.duration__content {
+  display: flex;
+}
+
+.section__title {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--graydarker);
+}
+.ingredients__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--graydarker);
+}
+.list__item {
+  display: flex;
+  margin-bottom: 1em;
+}
+.ingredient {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-left: 0.5em;
+  color: var(--graydarker);
+}
+.ingredient span {
+  font-weight: 700;
+}
+.ingredient .ingredient__text {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.instructions__title {
+  font-size: 2.4rem;
+  color: var(--graydarker);
+}
+.number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  border-radius: 6px;
+}
+.number span {
+  display: inline-block;
+  font-family: var(--fontsecondary);
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--white);
+}
+.instruction {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding-left: 1em;
+}
+.instruction span {
+  font-weight: 700;
+}
+
+.source {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--graylighter);
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+.copy span {
+  font-weight: 700;
 }
