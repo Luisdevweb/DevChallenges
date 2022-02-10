@@ -134,33 +134,40 @@ body {
   font-weight: 500;
   font-style: italic;
 }
-
+.instructions {
+  padding: 1em;
+}
 .instructions__title {
   font-size: 2.4rem;
   color: var(--graydarker);
 }
 .number {
+  position: relative;
   width: 36px;
   height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--orange);
-  border-radius: 6px;
-}
-.number span {
-  display: inline-block;
   font-family: var(--fontsecondary);
   font-weight: 700;
   font-size: 2.4rem;
   color: var(--white);
+  margin-right: 1.2em;
+}
+.number::before {
+  position: absolute;
+  content: "";
+  left: -0.45em;
+  top: 0.1em;
+  width: inherit;
+  height: inherit;
+  background-color: var(--orange);
+  border-radius: 6px;
+  z-index: -1;
 }
 .instruction {
   color: var(--black);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 24px;
-  padding-left: 1em;
+  padding-right: 2em;
 }
 .instruction span {
   font-weight: 700;
