@@ -121,6 +121,33 @@ body {
   display: flex;
   margin-bottom: 1em;
 }
+.form {
+  position: relative;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.icon-done {
+  visibility: hidden;
+}
+.form__label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+.form__input {
+  visibility: hidden;
+}
+.form__input:checked + .form__label .icon-done {
+  visibility: visible;
+}
 .ingredient {
   font-size: 1.4rem;
   font-weight: 400;
@@ -167,7 +194,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 24px;
-  padding-right: 2em;
+  padding-right: 1.25em;
 }
 .instruction span {
   font-weight: 700;
