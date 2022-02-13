@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/recipe-page-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://devchallenges.io/solutions/g6AmuIBVQ0FPwjMmcqTz">
       Solution
     </a>
     <span> | </span>
