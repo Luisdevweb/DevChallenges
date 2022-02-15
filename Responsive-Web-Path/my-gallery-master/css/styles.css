@@ -1,0 +1,117 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --greengrayishdark: hsla(160, 2%, 31%, 1);
+  --redgrayishlight: hsla(0, 0%, 66%, 1);
+  --redgrayishlighter: hsla(0, 0%, 74%, 1);
+  --bluegrayishlighter: hsla(229, 19%, 77%, 1);
+  --redgrayishverylight: hsla(0, 0%, 90%, 1);
+
+  --primaryfont: "Montserrat", sans-serif;
+  --semibold: 600;
+  --nomargin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: var(--white);
+  font-family: var(--primaryfont);
+  margin: 0;
+}
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding: 2.5em 0;
+  width: calc(96% - 1em);
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.profile {
+  text-align: center;
+}
+.profile__image {
+  width: 10rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1rem;
+}
+.profile__title,
+.profile__country,
+.stats {
+  font-weight: var(--semibold);
+}
+.profile__title {
+  font-size: 1.4rem;
+  color: var(--greengrayishdark);
+  margin-bottom: 0;
+}
+.profile__country {
+  margin-top: 0.5em;
+  color: var(--redgrayishlight);
+}
+
+.stats {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+}
+.stats__item {
+  font-size: 1.2rem;
+  margin: var(--nomargin);
+  width: 7.8rem;
+  height: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--redgrayishverylight);
+  border-radius: 1.2rem;
+}
+.stats__item span {
+  color: var(--redgrayishlighter);
+}
+
+.gallery {
+  max-width: 420px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-auto-rows: 100px;
+  gap: 1.5em;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8em;
+}
+.gallery__image--nth1 {
+  grid-column: 1/2;
+}
+.gallery__image--nth2 {
+  grid-column: 2/4;
+}
+.gallery__image--nth3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.gallery__image--nth4 {
+  grid-row: 2/4;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
