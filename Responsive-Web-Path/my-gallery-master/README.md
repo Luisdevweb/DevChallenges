@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/my-gallery-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/ArDuAeeuK7Qby1wv7Wf4">
       Solution
     </a>
     <span> | </span>

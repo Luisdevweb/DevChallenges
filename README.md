@@ -12,3 +12,5 @@
    [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/interior-consultant-master/) [repository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/interior-consultant-master)
 4. **recipe-page-master**
    [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/recipe-page-master/) [repository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/recipe-page-master)
+5. **my-gallery-master**
+   [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/my-gallery-master/) [respository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/my-gallery-master)
