@@ -18,6 +18,10 @@ body {
   font-family: var(--primaryfont);
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 .wrapper {
   position: relative;
   min-height: 100vh;
@@ -26,9 +30,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-img {
-  display: block;
-  max-width: 100%;
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    position: static;
+  }
 }
 .profile {
   text-align: center;
@@ -38,6 +43,14 @@ img {
   margin-right: auto;
   margin-left: auto;
   border-radius: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .profile {
+    padding-top: 1em;
+  }
+  .profile__image {
+    width: 15.6rem;
+  }
 }
 .profile__title,
 .profile__country,
@@ -53,7 +66,14 @@ img {
   margin-top: 0.5em;
   color: var(--redgrayishlight);
 }
-
+@media screen and (min-width: 1024px) {
+  .profile__title {
+    font-size: 2.4rem;
+  }
+  .profile__country {
+    font-size: 1.4rem;
+  }
+}
 .stats {
   width: 260px;
   margin-left: auto;
@@ -77,7 +97,19 @@ img {
 .stats__item span {
   color: var(--redgrayishlighter);
 }
-
+@media screen and (min-width: 1024px) {
+  .stats {
+    width: 345px;
+  }
+  .stats__item {
+    width: 10rem;
+    height: 6.7rem;
+    font-size: 1.8rem;
+  }
+  .stats__item span {
+    font-size: 1.4rem;
+  }
+}
 .gallery {
   max-width: 420px;
   margin-right: auto;
@@ -88,6 +120,13 @@ img {
   grid-auto-flow: row dense;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+@media screen and (min-width: 1024px) {
+  .gallery {
+    max-width: 950px;
+    margin: 8em auto;
+    gap: 3em;
+  }
 }
 .gallery__image {
   width: 100%;
@@ -114,4 +153,17 @@ img {
   position: absolute;
   bottom: 0;
   text-align: center;
+}
+.copy {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--bluegrayishlighter);
+}
+.coder {
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    position: static;
+  }
 }
