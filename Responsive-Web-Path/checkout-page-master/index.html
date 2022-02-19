@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Devchallenges</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">checkout</h1>
+    </header>
+    <main class="main">
+      <section class="wrapper">
+        <div class="checkout">
+          <div class="cart">
+            <div class="cart__item">
+              <div class="screenshot">
+                <img src="images/photo1.png" alt="product1" />
+              </div>
+              <div class="product">
+                <h2 class="product__name">Vintage Backbag</h2>
+                <p class="product__discount">
+                  $54.99<span class="product__price">$94.99</span>
+                </p>
+                <div class="counter">
+                  <div class="counter__decrease">-</div>
+                  <p class="counter__number">1</p>
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="screenshot">
+                <img src="images/photo2.png" alt="product2" />
+              </div>
+              <div class="product">
+                <h2 class="product__name">Levi Shoes</h2>
+                <p class="product__discount">
+                  $74.99<span class="product__price">$124.99</span>
+                </p>
+                <div class="counter">
+                  <div class="counter__decrease">-</div>
+                  <p class="counter__number">1</p>
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__content">
+            <div class="checkout__shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="checkout__total">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <form class="form">
+          <fieldset class="form__fieldset">
+            <legend>Contact Information</legend>
+            <div class="form__field">
+              <span>E-mail</span>
+              <label for="email" class="form__label"
+                ><input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="Enter your email..."
+              /></label>
+            </div>
+            <div class="form__field">
+              <span>Phone</span>
+              <label for="phone" class="form__label"
+                ><input
+                  type="tel"
+                  id="phone"
+                  class="form__input"
+                  placeholder="Enter your phone..."
+              /></label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend>Shipping Address</legend>
+            <div class="form__field">
+              <span>Full Name</span>
+              <label for="fullname" class="form__label"
+                ><input
+                  type="text"
+                  id="fullname"
+                  class="form__input"
+                  placeholder="Your fullname..."
+              /></label>
+            </div>
+            <div class="form__field">
+              <span>Address</span>
+              <label for="address" class="form__label"
+                ><input
+                  type="text"
+                  id="address"
+                  class="form__input"
+                  placeholder="Your address..."
+              /></label>
+            </div>
+            <div class="form__field">
+              <span>City</span>
+              <label for="city" class="form__label"
+                ><input
+                  type="text"
+                  id="city"
+                  class="form__input"
+                  placeholder="Your city..."
+              /></label>
+            </div>
+            <div class="form__field">
+              <span>Country</span>
+              <label for="country" class="form__label">
+                <select>
+                  <option disabled selected>Your country...</option>
+                  <option>Perú</option>
+                  <option>United States</option>
+                  <option>Mexico</option>
+                </select>
+              </label>
+            </div>
+            <div class="form__field">
+              <span>Postal code</span>
+              <label for="zipcode" class="form__label"
+                ><input
+                  type="text"
+                  id="zipcode"
+                  class="form__input"
+                  placeholder="Your postal code..."
+              /></label>
+            </div>
+            <div>
+              <label for="check" class="form__label"
+                ><input type="checkbox" id="check" class="form__check"
+              /></label>
+              <span>Save this information for next time</span>
+            </div>
+            <button type="submit" class="button" id="button">Continue</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer><p>Created by luismac09 -devChallenges.io</p></footer>
+  </body>
+</html>

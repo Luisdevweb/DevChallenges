@@ -1,0 +1,17 @@
+:root {
+  --primaryfont: "Montserrat", sans-serif;
+  --white: hsla(0, 0%, 100%, 1);
+  --grayishturquoise: hsl(165, 2%, 31%, 1);
+  --verylightgray: hsla(0, 0%, 95%, 1);
+  --lightorange: hsl(28, 87%, 62%, 1);
+  --darkergray: hsla(0, 0%, 20%, 1);
+  --lightergray: hsla(0, 0%, 88%, 1);
+  --gray: hsla(0, 0%, 51%, 1);
+  --darkgray: hsla(0, 0%, 31%, 1);
+  --lightgray: hsla(0, 0%, 74%, 1);
+}
+body {
+  margin: 0;
+  font-family: var(--primaryfont);
+  background-color: var(--white);
+}
