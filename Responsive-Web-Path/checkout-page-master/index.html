@@ -19,16 +19,20 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1 class="title">checkout</h1>
+    <header class="header">
+      <h1 class="header__title">checkout</h1>
     </header>
     <main class="main">
-      <section class="wrapper">
+      <section class="aside">
         <div class="checkout">
           <div class="cart">
             <div class="cart__item">
               <div class="screenshot">
-                <img src="images/photo1.png" alt="product1" />
+                <img
+                  class="cart__image"
+                  src="images/photo1.png"
+                  alt="product1"
+                />
               </div>
               <div class="product">
                 <h2 class="product__name">Vintage Backbag</h2>
@@ -44,7 +48,11 @@
             </div>
             <div class="cart__item">
               <div class="screenshot">
-                <img src="images/photo2.png" alt="product2" />
+                <img
+                  class="cart__image"
+                  src="images/photo2.png"
+                  alt="product2"
+                />
               </div>
               <div class="product">
                 <h2 class="product__name">Levi Shoes</h2>
@@ -74,9 +82,9 @@
       <section class="contact">
         <form class="form">
           <fieldset class="form__fieldset">
-            <legend>Contact Information</legend>
+            <legend class="form__title">Contact Information</legend>
             <div class="form__field">
-              <span>E-mail</span>
+              <span class="form__subtitle">E-mail</span>
               <label for="email" class="form__label"
                 ><input
                   type="email"
@@ -86,7 +94,7 @@
               /></label>
             </div>
             <div class="form__field">
-              <span>Phone</span>
+              <span class="form__subtitle">Phone</span>
               <label for="phone" class="form__label"
                 ><input
                   type="tel"
@@ -97,9 +105,9 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend>Shipping Address</legend>
+            <legend class="form__title">Shipping Address</legend>
             <div class="form__field">
-              <span>Full Name</span>
+              <span class="form__subtitle">Full Name</span>
               <label for="fullname" class="form__label"
                 ><input
                   type="text"
@@ -109,7 +117,7 @@
               /></label>
             </div>
             <div class="form__field">
-              <span>Address</span>
+              <span class="form__subtitle">Address</span>
               <label for="address" class="form__label"
                 ><input
                   type="text"
@@ -119,7 +127,7 @@
               /></label>
             </div>
             <div class="form__field">
-              <span>City</span>
+              <span class="form__subtitle">City</span>
               <label for="city" class="form__label"
                 ><input
                   type="text"
@@ -128,38 +136,45 @@
                   placeholder="Your city..."
               /></label>
             </div>
-            <div class="form__field">
-              <span>Country</span>
-              <label for="country" class="form__label">
-                <select>
-                  <option disabled selected>Your country...</option>
-                  <option>Perú</option>
-                  <option>United States</option>
-                  <option>Mexico</option>
-                </select>
-              </label>
+            <div class="form__location">
+              <div class="form__field">
+                <span class="form__subtitle">Country</span>
+                <label for="country" class="form__label">
+                  <select class="form__select">
+                    <option disabled selected>Your country...</option>
+                    <option>Perú</option>
+                    <option>United States</option>
+                    <option>Mexico</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__field">
+                <span class="form__subtitle">Postal code</span>
+                <label for="zipcode" class="form__label"
+                  ><input
+                    type="text"
+                    id="zipcode"
+                    class="form__input"
+                    placeholder="Your postal code..."
+                /></label>
+              </div>
             </div>
-            <div class="form__field">
-              <span>Postal code</span>
-              <label for="zipcode" class="form__label"
-                ><input
-                  type="text"
-                  id="zipcode"
-                  class="form__input"
-                  placeholder="Your postal code..."
-              /></label>
-            </div>
-            <div>
+
+            <div class="remember">
               <label for="check" class="form__label"
                 ><input type="checkbox" id="check" class="form__check"
               /></label>
               <span>Save this information for next time</span>
             </div>
-            <button type="submit" class="button" id="button">Continue</button>
+            <div class="continue">
+              <button type="submit" class="button" id="button">Continue</button>
+            </div>
           </fieldset>
         </form>
       </section>
     </main>
-    <footer><p>Created by luismac09 -devChallenges.io</p></footer>
+    <footer class="footer">
+      <p class="copy">Created by luismac09 -devChallenges.io</p>
+    </footer>
   </body>
 </html>
