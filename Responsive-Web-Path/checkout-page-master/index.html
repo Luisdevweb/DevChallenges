@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header wrapper">
       <h1 class="header__title">checkout</h1>
     </header>
     <main class="main">
       <section class="aside">
-        <div class="checkout">
+        <div class="checkout wrapper">
           <div class="cart">
             <div class="cart__item">
               <div class="screenshot">
@@ -64,18 +64,18 @@
           </div>
           <div class="checkout__content">
             <div class="checkout__shipping">
-              <p>Shipping</p>
+              <p class="size-18">Shipping</p>
               <p>$19</p>
             </div>
             <div class="checkout__total">
-              <p>Total</p>
+              <p class="size-18">Total</p>
               <p>$148.98</p>
             </div>
           </div>
         </div>
       </section>
       <section class="contact">
-        <form class="form">
+        <form class="form wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__title">Contact Information</legend>
             <div class="form__field">
@@ -168,7 +168,6 @@
                 </select>
                 <label for="country" class="form__label">
                   <img
-                    class="icon-arrow-down"
                     src="images/icons/keyboard_arrow_down.svg"
                     alt="arrow-down"
                   />
@@ -216,5 +215,7 @@
         Created by <span class="author">luismac09 </span>-devChallenges.io
       </p>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
