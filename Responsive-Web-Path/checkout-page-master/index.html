@@ -3,12 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="devchallenges.png" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <link rel="icon" href="images/devchallenges.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -85,8 +80,13 @@
             <legend class="form__title">Contact Information</legend>
             <div class="form__field">
               <span class="form__subtitle">E-mail</span>
-              <label for="email" class="form__label"
-                ><input
+              <img
+                class="form__icon"
+                src="images/icons/email.svg"
+                alt="email"
+              />
+              <label for="email" class="form__label">
+                <input
                   type="email"
                   id="email"
                   class="form__input"
@@ -95,8 +95,9 @@
             </div>
             <div class="form__field">
               <span class="form__subtitle">Phone</span>
-              <label for="phone" class="form__label"
-                ><input
+              <img class="form__icon" src="images/icons/call.svg" alt="phone" />
+              <label for="phone" class="form__label">
+                <input
                   type="tel"
                   id="phone"
                   class="form__input"
@@ -108,8 +109,13 @@
             <legend class="form__title">Shipping Address</legend>
             <div class="form__field">
               <span class="form__subtitle">Full Name</span>
-              <label for="fullname" class="form__label"
-                ><input
+              <img
+                class="form__icon"
+                src="images/icons/account_circle.svg"
+                alt="username"
+              />
+              <label for="fullname" class="form__label">
+                <input
                   type="text"
                   id="fullname"
                   class="form__input"
@@ -118,8 +124,13 @@
             </div>
             <div class="form__field">
               <span class="form__subtitle">Address</span>
-              <label for="address" class="form__label"
-                ><input
+              <img
+                class="form__icon"
+                src="images/icons/home.svg"
+                alt="address"
+              />
+              <label for="address" class="form__label">
+                <input
                   type="text"
                   id="address"
                   class="form__input"
@@ -128,6 +139,11 @@
             </div>
             <div class="form__field">
               <span class="form__subtitle">City</span>
+              <img
+                class="form__icon"
+                src="images/icons/location_city.svg"
+                alt="location city"
+              />
               <label for="city" class="form__label"
                 ><input
                   type="text"
@@ -139,17 +155,32 @@
             <div class="form__location">
               <div class="form__field">
                 <span class="form__subtitle">Country</span>
+                <img
+                  class="form__icon"
+                  src="images/icons/location_city.svg"
+                  alt="location country"
+                />
+                <select id="country" title="countries" class="form__select">
+                  <option disabled selected>Your country...</option>
+                  <option>Perú</option>
+                  <option>United States</option>
+                  <option>Mexico</option>
+                </select>
                 <label for="country" class="form__label">
-                  <select class="form__select">
-                    <option disabled selected>Your country...</option>
-                    <option>Perú</option>
-                    <option>United States</option>
-                    <option>Mexico</option>
-                  </select>
+                  <img
+                    class="icon-arrow-down"
+                    src="images/icons/keyboard_arrow_down.svg"
+                    alt="arrow-down"
+                  />
                 </label>
               </div>
-              <div class="form__field">
+              <div class="form__field margin-left">
                 <span class="form__subtitle">Postal code</span>
+                <img
+                  class="form__icon"
+                  src="images/icons/markunread_mailbox.svg"
+                  alt="mailbox"
+                />
                 <label for="zipcode" class="form__label"
                   ><input
                     type="text"
@@ -161,10 +192,17 @@
             </div>
 
             <div class="remember">
-              <label for="check" class="form__label"
-                ><input type="checkbox" id="check" class="form__check"
-              /></label>
-              <span>Save this information for next time</span>
+              <input type="checkbox" id="check" class="remember__check" />
+              <label for="check" class="remember__label">
+                <img
+                  class="icon-check"
+                  src="images/icons/check.svg"
+                  alt="check"
+                />
+              </label>
+              <span class="remember__text"
+                >Save this information for next time</span
+              >
             </div>
             <div class="continue">
               <button type="submit" class="button" id="button">Continue</button>
@@ -174,7 +212,9 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="copy">Created by luismac09 -devChallenges.io</p>
+      <p class="copy">
+        Created by <span class="author">luismac09 </span>-devChallenges.io
+      </p>
     </footer>
   </body>
 </html>

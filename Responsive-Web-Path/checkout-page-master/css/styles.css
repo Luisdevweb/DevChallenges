@@ -37,9 +37,6 @@ fieldset {
   border: none;
   padding: 0;
 }
-legend {
-  padding: 0;
-}
 input,
 button,
 input:focus,
@@ -47,9 +44,10 @@ select:focus {
   border: none;
   outline: none;
 }
-.no-margin {
-  margin: 0;
+.margin-left {
+  margin-left: 2.5em;
 }
+
 .header {
   padding: 0 1.5em;
 }
@@ -61,6 +59,7 @@ select:focus {
   width: calc(100% - 2em);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10em;
 }
 .checkout {
   max-width: 350px;
@@ -68,7 +67,7 @@ select:focus {
   padding-top: 2.5em;
   padding-bottom: 2em;
   border-radius: 12px;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 .cart {
   margin-bottom: 8em;
@@ -151,13 +150,17 @@ select:focus {
   color: var(--darkergray);
 }
 .form__fieldset {
-  margin-bottom: 2em;
+  margin-bottom: 3.5em;
+  font-size: l.4rem;
 }
 .form__title {
-  font-size: l.4rem;
+  padding-left: 0;
+  margin-bottom: 0.8em;
   color: var(--darkergray);
+  font-size: 1.4rem;
 }
 .form__field {
+  position: relative;
   margin-bottom: 1em;
 }
 .form__subtitle {
@@ -165,18 +168,26 @@ select:focus {
   color: var(--darkgray);
   margin-bottom: 0.5em;
 }
+.form__icon {
+  position: absolute;
+  top: 3.2em;
+  left: 0.6em;
+  width: 15px;
+  height: 13px;
+}
 .form__label {
   display: block;
 }
 .form__input {
   width: 100%;
   height: 40px;
+  font-size: 1.2rem;
   padding: 0.6em 0 0.6em 2em;
   border: 1px solid var(--gray);
   border-radius: 12px;
 }
 .form__input::placeholder {
-  font-size: 1.1 rem;
+  font-size: 1.2rem;
   color: var(--gray);
 }
 
@@ -187,6 +198,7 @@ select:focus {
 .form__location .form__field {
   flex-basis: 50%;
 }
+
 .form__select {
   width: 100%;
   border-radius: 12px;
@@ -194,15 +206,47 @@ select:focus {
   height: 40px;
   color: var(--gray);
 }
+.form__select + .form__label {
+  display: none;
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  width: 15px;
+  height: 15px;
+  background-color: var(--lightergray);
+  border-radius: 4px;
+}
 .remember {
   display: flex;
   align-items: center;
   color: var(--darkgray);
+  margin-bottom: 1.5em;
+}
+.remember__check {
+  display: none;
+}
+.remember__label {
+  width: 16px;
+  height: 15px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: var(--gray);
+}
+.remember__check:checked + .remember__label .icon-check {
+  visibility: visible;
+}
+.icon-check {
+  visibility: hidden;
+}
+.remember__text {
+  padding-left: 0.5em;
 }
 .continue {
   text-align: right;
 }
 .button {
+  width: 169px;
+  height: 54px;
   padding: 0.8em 2em;
   border-radius: 12px;
   background-color: var(--lightorange);
@@ -218,4 +262,7 @@ select:focus {
 .copy {
   font-size: 1.4rem;
   color: var(--lightgray);
+}
+.author {
+  font-weight: 700;
 }
