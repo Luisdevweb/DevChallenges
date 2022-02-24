@@ -42,6 +42,7 @@ fieldset {
 }
 input,
 button,
+select,
 input:focus,
 select:focus {
   border: none;
@@ -280,10 +281,12 @@ select:focus {
 
 .form__select {
   width: 100%;
+  border: 1px solid var(--gray);
   border-radius: 12px;
   padding: 0.6em 0 0.6em 1.8em;
   height: 40px;
   color: var(--gray);
+  background-color: var(--white);
   appearance: none;
   background-image: url("../images/icons/keyboard_arrow_down.svg"),
     linear-gradient(to bottom, var(--lightergray) 0%, var(--lightergray) 100%);

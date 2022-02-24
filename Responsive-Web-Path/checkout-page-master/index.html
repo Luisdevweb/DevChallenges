@@ -155,11 +155,18 @@
             <div class="form__location">
               <div class="form__field">
                 <span class="form__subtitle">Country</span>
-                <img
-                  class="form__icon"
-                  src="images/icons/location_city.svg"
-                  alt="location country"
-                />
+                <picture>
+                  <source
+                    srcset="images/icons/public.svg"
+                    media="(min-width: 992px)"
+                  />
+                  <img
+                    class="form__icon"
+                    src="images/icons/location_city.svg"
+                    alt="location country"
+                  />
+                </picture>
+
                 <label for="country" class="form__label">
                   <select id="country" title="countries" class="form__select">
                     <option disabled selected>Your country...</option>
