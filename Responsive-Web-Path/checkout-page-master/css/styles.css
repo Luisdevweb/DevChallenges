@@ -285,16 +285,13 @@ select:focus {
   height: 40px;
   color: var(--gray);
   appearance: none;
+  background-image: url("../images/icons/keyboard_arrow_down.svg"),
+    linear-gradient(to bottom, var(--lightergray) 0%, var(--lightergray) 100%);
+  background-repeat: no-repeat;
+  background-position: right 1em top 50%;
+  background-size: 15px auto, 15px 15px;
 }
-.form__select + .form__label {
-  position: absolute;
-  top: 3em;
-  right: 1em;
-  width: 15px;
-  height: 16px;
-  background-color: var(--lightergray);
-  border-radius: 4px;
-}
+
 @media screen and (min-width: 992px) {
   .form__input::placeholder {
     font-size: 1.6rem;
@@ -309,10 +306,8 @@ select:focus {
     font-size: 1.6rem;
     height: 56px;
   }
-  .form__select + .form__label {
-    width: 21px;
-    height: 21px;
-    top: 3.8em;
+  .form__select {
+    background-size: 21px auto, 21px 21px;
   }
 }
 .remember {
