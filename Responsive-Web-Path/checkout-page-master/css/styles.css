@@ -55,12 +55,18 @@ select:focus {
 option:checked {
   display: none;
 }
-
 .wrapper {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 0.5em;
 }
+@media screen and (min-width: 576px) {
+  .wrapper {
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header {
   max-width: 1060px;
 }
@@ -77,6 +83,7 @@ option:checked {
 .main {
   margin-bottom: 10em;
 }
+
 @media screen and (min-width: 992px) {
   .size-18 {
     font-size: 1.8rem;
@@ -188,18 +195,6 @@ option:checked {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gray);
-  background-color: var(--lightergray);
-  font-size: 2.5rem;
-  border-radius: 4px;
-}
-@media (hover: hover) {
-  .counter__decrease:hover,
-  .counter__increase:hover {
-    cursor: pointer;
-    opacity: 80%;
-    outline: 1px solid var(--darkgray);
-  }
 }
 @media screen and (min-width: 992px) {
   .counter {
@@ -362,20 +357,37 @@ option:checked {
   text-align: right;
 }
 .button {
-  width: 169px;
-  height: 54px;
-  padding: 0.8em 2em;
-  border-radius: 12px;
-  background-color: var(--lightorange);
-  font-size: 1.6rem;
-  color: var(--white);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   font-weight: 600;
   font-family: var(--primaryfont);
+}
+.button--increase,
+.button--decrease {
+  padding: 0;
+  font-size: 1.8rem;
+  color: var(--gray);
+  background-color: var(--lightergray);
+  border-radius: 4px;
+}
+.button--increase:active,
+.button--decrease:active {
+  outline: 1px solid var(--lightorange);
+}
+.button--continue {
+  width: 169px;
+  height: 54px;
+  background-color: var(--lightorange);
+  color: var(--white);
+  font-size: 1.6rem;
+  border-radius: 12px;
+  padding: 0.8em 2em;
 }
 @media (hover: hover) {
   .button:hover {
     cursor: pointer;
-    opacity: 60%;
+    opacity: 80%;
   }
   .remember__label:hover {
     cursor: pointer;
