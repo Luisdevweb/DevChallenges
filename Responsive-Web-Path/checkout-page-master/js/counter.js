@@ -19,6 +19,6 @@ const decreaseNumber = (e) => {
 
 const increaseNumber = (e) => {
   const counterNumber = e.target.parentElement.previousElementSibling;
-  number >= 1 ? number++ : (number = 1);
+  number < 10 ? number++ : (number = 10);
   counterNumber.textContent = number;
 };

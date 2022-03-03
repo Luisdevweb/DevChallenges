@@ -266,10 +266,11 @@ option:checked {
 .form__input {
   width: 100%;
   height: 40px;
+  color: var(--darkergray);
   font-size: 1.2rem;
   font-family: var(--primaryfont);
   font-weight: 600;
-  padding: 0.6em 0 0.6em 2em;
+  padding: 0.6em 2em;
   border: 1px solid var(--gray);
   border-radius: 12px;
 }
@@ -286,13 +287,27 @@ option:checked {
 .form__location .form__field {
   flex-basis: 50%;
 }
-
+.error-icon,
+.success-icon {
+  position: absolute;
+  top: 40%;
+  right: 0.2em;
+  width: 24px;
+  height: 24px;
+  visibility: hidden;
+}
+.message {
+  font-size: 1.2rem;
+  color: red;
+  padding-left: 2em;
+}
 .form__select {
   width: 100%;
   border: 1px solid var(--gray);
   border-radius: 12px;
   padding: 0.6em 0 0.6em 1.8em;
   height: 40px;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: var(--primaryfont);
   color: var(--gray);
@@ -303,6 +318,9 @@ option:checked {
   background-repeat: no-repeat;
   background-position: right 1em top 50%;
   background-size: 15px auto, 15px 15px;
+}
+.form__select:focus {
+  color: var(--darkergray);
 }
 @media (hover: hover) {
   .form__select:hover {
