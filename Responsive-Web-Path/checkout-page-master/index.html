@@ -14,265 +14,101 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header wrapper">
-      <h1 class="header__title">checkout</h1>
-    </header>
     <main class="main wrapper">
-      <section class="aside">
-        <div class="checkout wrapper">
-          <div class="cart">
-            <div class="cart__item">
-              <div class="screenshot">
-                <img
-                  class="cart__image"
-                  src="images/photo1.png"
-                  alt="product1"
-                />
-              </div>
-              <div class="product">
-                <h2 class="product__name">Vintage Backbag</h2>
-                <p class="product__discount">
-                  $54.99<span class="product__price">$94.99</span>
-                </p>
-                <div class="counter">
-                  <div class="counter__decrease">
-                    <button type="button" class="button button--decrease">
-                      -
-                    </button>
-                  </div>
-                  <p class="counter__number">1</p>
-                  <div class="counter__increase">
-                    <button type="button" class="button button--increase">
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cart__item">
-              <div class="screenshot">
-                <img
-                  class="cart__image"
-                  src="images/photo2.png"
-                  alt="product2"
-                />
-              </div>
-              <div class="product">
-                <h2 class="product__name">Levi Shoes</h2>
-                <p class="product__discount">
-                  $74.99<span class="product__price">$124.99</span>
-                </p>
-                <div class="counter">
-                  <div class="counter__decrease">
-                    <button type="button" class="button button--decrease">
-                      -
-                    </button>
-                  </div>
-                  <p class="counter__number">1</p>
-                  <div class="counter__increase">
-                    <button type="button" class="button button--increase">
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="checkout__content">
-            <div class="checkout__shipping">
-              <p class="size-18">Shipping</p>
-              <p>$19</p>
-            </div>
-            <div class="checkout__total">
-              <p class="size-18">Total</p>
-              <p>$148.98</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <form class="form wrapper" id="form">
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Contact Information</legend>
-            <div class="form__field">
-              <span class="form__subtitle">E-mail</span>
-              <img
-                class="form__icon"
-                src="images/icons/email.svg"
-                alt="email"
-              />
-              <label for="email" class="form__label">
-                <input
-                  type="email"
-                  id="email"
-                  class="form__input"
-                  placeholder="Enter your email..."
-              /></label>
-              <img
-                src="images/icons/error.svg"
-                alt="error"
-                class="error-icon"
-              />
-              <img
-                src="images/icons/check_circle.svg"
-                alt="success"
-                class="success-icon"
-              />
-              <span class="message"></span>
-            </div>
-            <div class="form__field">
-              <span class="form__subtitle">Phone</span>
-              <img class="form__icon" src="images/icons/call.svg" alt="phone" />
-              <label for="phone" class="form__label">
-                <input
-                  type="tel"
-                  id="phone"
-                  class="form__input"
-                  placeholder="Enter your phone..."
-              /></label>
-              <img
-                src="images/icons/error.svg"
-                alt="error"
-                class="error-icon"
-              />
-              <img
-                src="images/icons/check_circle.svg"
-                alt="success"
-                class="success-icon"
-              />
-              <span class="message"></span>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Shipping Address</legend>
-            <div class="form__field">
-              <span class="form__subtitle">Full Name</span>
-              <img
-                class="form__icon"
-                src="images/icons/account_circle.svg"
-                alt="username"
-              />
-              <label for="fullname" class="form__label">
-                <input
-                  type="text"
-                  id="fullname"
-                  class="form__input"
-                  placeholder="Your fullname..."
-              /></label>
-              <img
-                src="images/icons/error.svg"
-                alt="error"
-                class="error-icon"
-              />
-              <img
-                src="images/icons/check_circle.svg"
-                alt="success"
-                class="success-icon"
-              />
-              <span class="message"></span>
-            </div>
-            <div class="form__field">
-              <span class="form__subtitle">Address</span>
-              <img
-                class="form__icon"
-                src="images/icons/home.svg"
-                alt="address"
-              />
-              <label for="address" class="form__label">
-                <input
-                  type="text"
-                  id="address"
-                  class="form__input"
-                  placeholder="Your address..."
-              /></label>
-              <img
-                src="images/icons/error.svg"
-                alt="error"
-                class="error-icon"
-              />
-              <img
-                src="images/icons/check_circle.svg"
-                alt="success"
-                class="success-icon"
-              />
-              <span class="message"></span>
-            </div>
-            <div class="form__field">
-              <span class="form__subtitle">City</span>
-              <img
-                class="form__icon"
-                src="images/icons/location_city.svg"
-                alt="location city"
-              />
-              <label for="city" class="form__label"
-                ><input
-                  type="text"
-                  id="city"
-                  class="form__input"
-                  placeholder="Your city..."
-              /></label>
-              <img
-                src="images/icons/error.svg"
-                alt="error"
-                class="error-icon"
-              />
-              <img
-                src="images/icons/check_circle.svg"
-                alt="success"
-                class="success-icon"
-              />
-              <span class="message"></span>
-            </div>
-            <div class="form__location">
-              <div class="form__field">
-                <span class="form__subtitle">Country</span>
-                <picture>
-                  <source
-                    srcset="images/icons/public.svg"
-                    media="(min-width: 992px)"
-                  />
+      <header class="header">
+        <h1 class="header__title">checkout</h1>
+      </header>
+      <div class="row">
+        <section class="aside">
+          <div class="checkout wrapper">
+            <div class="cart">
+              <div class="cart__item">
+                <div class="screenshot">
                   <img
-                    class="form__icon"
-                    src="images/icons/location_city.svg"
-                    alt="location country"
+                    class="cart__image"
+                    src="images/photo1.png"
+                    alt="product1"
                   />
-                </picture>
-
-                <label for="country" class="form__label">
-                  <select id="country" title="countries" class="form__select">
-                    <option disabled selected>Your country...</option>
-                    <option>Perú</option>
-                    <option>United States</option>
-                    <option>México</option>
-                  </select>
-                </label>
-                <img
-                  src="images/icons/error.svg"
-                  alt="error"
-                  class="error-icon"
-                />
-                <img
-                  src="images/icons/check_circle.svg"
-                  alt="success"
-                  class="success-icon"
-                />
-                <span class="message"></span>
+                </div>
+                <div class="product">
+                  <h2 class="product__name">Vintage Backbag</h2>
+                  <p class="product__discount">
+                    $54.99<span class="product__price">$94.99</span>
+                  </p>
+                  <div class="counter">
+                    <div class="counter__decrease">
+                      <button type="button" class="button button--decrease">
+                        -
+                      </button>
+                    </div>
+                    <p class="counter__number">1</p>
+                    <div class="counter__increase">
+                      <button type="button" class="button button--increase">
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form__field margin-left">
-                <span class="form__subtitle">Postal code</span>
+              <div class="cart__item">
+                <div class="screenshot">
+                  <img
+                    class="cart__image"
+                    src="images/photo2.png"
+                    alt="product2"
+                  />
+                </div>
+                <div class="product">
+                  <h2 class="product__name">Levi Shoes</h2>
+                  <p class="product__discount">
+                    $74.99<span class="product__price">$124.99</span>
+                  </p>
+                  <div class="counter">
+                    <div class="counter__decrease">
+                      <button type="button" class="button button--decrease">
+                        -
+                      </button>
+                    </div>
+                    <p class="counter__number">1</p>
+                    <div class="counter__increase">
+                      <button type="button" class="button button--increase">
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__content">
+              <div class="checkout__shipping">
+                <p class="size-18">Shipping</p>
+                <p>$19</p>
+              </div>
+              <div class="checkout__total">
+                <p class="size-18">Total</p>
+                <p>$148.98</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <form class="form wrapper" id="form">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Contact Information</legend>
+              <div class="form__field">
+                <span class="form__subtitle">E-mail</span>
                 <img
                   class="form__icon"
-                  src="images/icons/markunread_mailbox.svg"
-                  alt="mailbox"
+                  src="images/icons/email.svg"
+                  alt="email"
                 />
-                <label for="zipcode" class="form__label"
-                  ><input
-                    type="text"
-                    id="zipcode"
+                <label for="email" class="form__label">
+                  <input
+                    type="email"
+                    id="email"
                     class="form__input"
-                    placeholder="Your postal code..."
-                  />
-                </label>
+                    placeholder="Enter your email..."
+                /></label>
                 <img
                   src="images/icons/error.svg"
                   alt="error"
@@ -285,33 +121,203 @@
                 />
                 <span class="message"></span>
               </div>
-            </div>
-
-            <div class="remember">
-              <input type="checkbox" id="check" class="remember__check" />
-              <label for="check" class="remember__label">
+              <div class="form__field">
+                <span class="form__subtitle">Phone</span>
                 <img
-                  class="icon-check"
-                  src="images/icons/check.svg"
-                  alt="check"
+                  class="form__icon"
+                  src="images/icons/call.svg"
+                  alt="phone"
                 />
-              </label>
-              <span class="remember__text"
-                >Save this information for next time</span
-              >
-            </div>
-            <div class="continue">
-              <button
-                type="submit"
-                class="button button--continue"
-                id="continue"
-              >
-                Continue
-              </button>
-            </div>
-          </fieldset>
-        </form>
-      </section>
+                <label for="phone" class="form__label">
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form__input"
+                    placeholder="Enter your phone..."
+                /></label>
+                <img
+                  src="images/icons/error.svg"
+                  alt="error"
+                  class="error-icon"
+                />
+                <img
+                  src="images/icons/check_circle.svg"
+                  alt="success"
+                  class="success-icon"
+                />
+                <span class="message"></span>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Shipping Address</legend>
+              <div class="form__field">
+                <span class="form__subtitle">Full Name</span>
+                <img
+                  class="form__icon"
+                  src="images/icons/account_circle.svg"
+                  alt="username"
+                />
+                <label for="fullname" class="form__label">
+                  <input
+                    type="text"
+                    id="fullname"
+                    class="form__input"
+                    placeholder="Your fullname..."
+                /></label>
+                <img
+                  src="images/icons/error.svg"
+                  alt="error"
+                  class="error-icon"
+                />
+                <img
+                  src="images/icons/check_circle.svg"
+                  alt="success"
+                  class="success-icon"
+                />
+                <span class="message"></span>
+              </div>
+              <div class="form__field">
+                <span class="form__subtitle">Address</span>
+                <img
+                  class="form__icon"
+                  src="images/icons/home.svg"
+                  alt="address"
+                />
+                <label for="address" class="form__label">
+                  <input
+                    type="text"
+                    id="address"
+                    class="form__input"
+                    placeholder="Your address..."
+                /></label>
+                <img
+                  src="images/icons/error.svg"
+                  alt="error"
+                  class="error-icon"
+                />
+                <img
+                  src="images/icons/check_circle.svg"
+                  alt="success"
+                  class="success-icon"
+                />
+                <span class="message"></span>
+              </div>
+              <div class="form__field">
+                <span class="form__subtitle">City</span>
+                <img
+                  class="form__icon"
+                  src="images/icons/location_city.svg"
+                  alt="location city"
+                />
+                <label for="city" class="form__label"
+                  ><input
+                    type="text"
+                    id="city"
+                    class="form__input"
+                    placeholder="Your city..."
+                /></label>
+                <img
+                  src="images/icons/error.svg"
+                  alt="error"
+                  class="error-icon"
+                />
+                <img
+                  src="images/icons/check_circle.svg"
+                  alt="success"
+                  class="success-icon"
+                />
+                <span class="message"></span>
+              </div>
+              <div class="form__location">
+                <div class="form__field">
+                  <span class="form__subtitle">Country</span>
+                  <picture>
+                    <source
+                      srcset="images/icons/public.svg"
+                      media="(min-width: 992px)"
+                    />
+                    <img
+                      class="form__icon"
+                      src="images/icons/location_city.svg"
+                      alt="location country"
+                    />
+                  </picture>
+
+                  <label for="country" class="form__label">
+                    <select id="country" title="countries" class="form__select">
+                      <option disabled selected>Your country...</option>
+                      <option>Perú</option>
+                      <option>United States</option>
+                      <option>México</option>
+                    </select>
+                  </label>
+                  <img
+                    src="images/icons/error.svg"
+                    alt="error"
+                    class="error-icon"
+                  />
+                  <img
+                    src="images/icons/check_circle.svg"
+                    alt="success"
+                    class="success-icon"
+                  />
+                  <span class="message"></span>
+                </div>
+                <div class="form__field margin-left">
+                  <span class="form__subtitle">Postal code</span>
+                  <img
+                    class="form__icon"
+                    src="images/icons/markunread_mailbox.svg"
+                    alt="mailbox"
+                  />
+                  <label for="zipcode" class="form__label"
+                    ><input
+                      type="text"
+                      id="zipcode"
+                      class="form__input"
+                      placeholder="Your postal code..."
+                    />
+                  </label>
+                  <img
+                    src="images/icons/error.svg"
+                    alt="error"
+                    class="error-icon"
+                  />
+                  <img
+                    src="images/icons/check_circle.svg"
+                    alt="success"
+                    class="success-icon"
+                  />
+                  <span class="message"></span>
+                </div>
+              </div>
+
+              <div class="remember">
+                <input type="checkbox" id="check" class="remember__check" />
+                <label for="check" class="remember__label">
+                  <img
+                    class="icon-check"
+                    src="images/icons/check.svg"
+                    alt="check"
+                  />
+                </label>
+                <span class="remember__text"
+                  >Save this information for next time</span
+                >
+              </div>
+              <div class="continue">
+                <button
+                  type="submit"
+                  class="button button--continue"
+                  id="continue"
+                >
+                  Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <p class="copy">

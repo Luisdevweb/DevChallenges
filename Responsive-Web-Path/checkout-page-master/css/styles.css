@@ -68,15 +68,24 @@ option:checked {
 }
 
 .header {
-  max-width: 1060px;
+  width: 100%;
 }
 .header__title {
+  font-weight: 600;
   text-transform: capitalize;
   color: var(--grayishturquoise);
+  margin-bottom: 1em;
 }
 @media screen and (min-width: 992px) {
+  .header {
+    width: 58%;
+  }
   .header__title {
+    max-width: 468px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 3.6rem;
+    margin-bottom: 1em;
   }
 }
 
@@ -88,14 +97,12 @@ option:checked {
   .size-18 {
     font-size: 1.8rem;
   }
-  .header {
-    padding-left: 2em;
-    padding-top: 2em;
+  .main {
+    margin-top: 1em;
     margin-bottom: 2em;
   }
-  .main {
+  .row {
     display: flex;
-    margin-bottom: 0;
   }
   .aside {
     flex-basis: 42%;
@@ -165,6 +172,7 @@ option:checked {
   margin-left: 1em;
   font-size: 1rem;
   color: var(--grayishturquoise);
+  text-decoration: line-through;
 }
 @media screen and (min-width: 992px) {
   .product__name,
@@ -238,7 +246,7 @@ option:checked {
 
 .form__field {
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .form__subtitle {
   display: inline-block;
@@ -248,6 +256,9 @@ option:checked {
 @media screen and (min-width: 992px) {
   .form__title {
     font-size: 1.8rem;
+  }
+  .form__fieldset {
+    margin-bottom: 2em;
   }
   .form__subtitle {
     font-size: 1.2rem;
@@ -299,7 +310,7 @@ option:checked {
 .message {
   font-size: 1.2rem;
   color: red;
-  padding-left: 2em;
+  padding-left: 0.5em;
 }
 .form__select {
   width: 100%;
