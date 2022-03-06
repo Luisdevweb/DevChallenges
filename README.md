@@ -14,3 +14,5 @@
    [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/recipe-page-master/) [repository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/recipe-page-master)
 5. **my-gallery-master**
    [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/my-gallery-master/) [respository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/my-gallery-master)
+6. **checkout-page-master**
+   [demo](https://luismac09.github.io/DevChallenges/Responsive-Web-Path/checkout-page-master/) [respository](https://github.com/luismac09/DevChallenges/tree/master/Responsive-Web-Path/checkout-page-master)

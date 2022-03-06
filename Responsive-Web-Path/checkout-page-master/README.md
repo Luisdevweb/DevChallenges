@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/checkout-page-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/sL0uwIbLbKbNQ4i7D1PF">
       Solution
     </a>
     <span> | </span>
@@ -39,7 +39,7 @@
 ### Built With
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/es/docs/Web/CSS
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JS](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Features
