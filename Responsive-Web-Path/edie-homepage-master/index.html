@@ -89,7 +89,7 @@
     <main class="service">
       <h3 class="service__title">We offer high demand services</h3>
       <article class="card">
-        <div class="icon-container">
+        <div class="icon-container icon-container--lightblue">
           <img class="card__image" src="assets/icons/edit.svg" alt="pencil" />
         </div>
         <h4 class="card__title">UI/UX Design</h4>
@@ -98,12 +98,12 @@
           ac nulla consequat aliquet id quis turpis.
         </p>
         <a href="#" class="card__link">Get started</a>
-        <div>
+        <div class="card__hand">
           <i class="fa-solid fa-hand-point-up"></i>
         </div>
       </article>
-      <article class="card">
-        <div class="icon-container">
+      <article class="card card--shadow">
+        <div class="icon-container icon-container--green">
           <img
             class="card__image"
             src="assets/icons/code.svg"
@@ -116,12 +116,12 @@
           ac nulla consequat aliquet id quis turpis.
         </p>
         <a href="#" class="card__link">Get started</a>
-        <div>
+        <div class="card__hand">
           <i class="fa-solid fa-hand-point-up"></i>
         </div>
       </article>
       <article class="card">
-        <div class="icon-container">
+        <div class="icon-container icon-container--red">
           <img
             class="card__image"
             src="assets/icons/storage.svg"
@@ -134,42 +134,56 @@
           ac nulla consequat aliquet id quis turpis.
         </p>
         <a href="#" class="card__link">Get started</a>
-        <div>
+        <div class="card__hand">
           <i class="fa-solid fa-hand-point-up"></i>
         </div>
       </article>
     </main>
     <section class="gallery">
       <h3 class="gallery__title">Good design means good business</h3>
-      <figure class="screenshot">
-        <img src="assets/images/smarthome.jpg" alt="smarthome dashboard" />
-        <figcaption class="screenshot__description">
-          <span>Full stack application</span>
-          <p>Smart home dashboard</p>
-        </figcaption>
-      </figure>
-      <figure class="screenshot">
-        <img src="assets/images/onboard.png" alt="onboard application" />
-        <figcaption class="screenshot__description">
-          <span>UX/UI design</span>
-          <p>Onboard application</p>
-        </figcaption>
-      </figure>
-      <figure class="screenshot">
-        <img src="assets/images/booking.png" alt="booking system" />
-        <figcaption class="screenshot__description">
-          <span>Mobile application</span>
-          <p>Booking system</p>
-        </figcaption>
-      </figure>
-      <figure class="screenshot">
+      <figure class="screenshot no-margin">
         <img
+          class="gallery__image"
+          src="assets/images/smarthome.jpg"
+          alt="smarthome dashboard"
+        />
+        <figcaption class="caption">
+          <span class="caption__type">Full stack application</span>
+          <p class="caption__name">Smart home dashboard</p>
+        </figcaption>
+      </figure>
+      <figure class="screenshot no-margin">
+        <img
+          class="gallery__image"
+          class="gallery__image"
+          src="assets/images/onboard.png"
+          alt="onboard application"
+        />
+        <figcaption class="caption">
+          <span class="caption__type">UX/UI design</span>
+          <p class="caption__name">Onboard application</p>
+        </figcaption>
+      </figure>
+      <figure class="screenshot no-margin">
+        <img
+          class="gallery__image"
+          src="assets/images/booking.png"
+          alt="booking system"
+        />
+        <figcaption class="caption">
+          <span class="caption__type">Mobile application</span>
+          <p class="caption__name">Booking system</p>
+        </figcaption>
+      </figure>
+      <figure class="screenshot no-margin">
+        <img
+          class="gallery__image"
           src="assets/images/juice-product.png"
           alt="juice product homepage"
         />
-        <figcaption class="screenshot__description">
-          <span>Front End application</span>
-          <p>Juice product homepage</p>
+        <figcaption class="caption">
+          <span class="caption__type">Front End application</span>
+          <p class="caption__name">Juice product homepage</p>
         </figcaption>
       </figure>
       <a href="#" class="gallery__link"
