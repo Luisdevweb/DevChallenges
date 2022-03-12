@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header wrapper">
       <h1 class="title">Edie</h1>
       <nav class="nav">
         <a href="#" class="nav__link">Home</a>
@@ -36,8 +36,8 @@
         <a href="#" class="nav__link">Clients</a>
         <a href="#" class="nav__link">Contact</a>
       </nav>
+      <img class="menu-icon" src="assets/icons/menu.svg" alt="menu" />
       <nav class="nav-mobile">
-        <img src="assets/icons/menu.svg" alt="menu" />
         <ul class="menu">
           <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
           <li class="menu__item">
@@ -52,26 +52,39 @@
       </nav>
     </header>
     <div class="hero">
-      <p class="hero__text">Unhappy with your website?</p>
-      <h2 class="hero__title">We create beautiful and fast web services</h2>
-      <img src="assets/images/heroImage.jpg" alt="team work" />
-      <h3>Story,emotion and purpose</h3>
-      <p>
-        We help transform your ideas into real world applications that will
-        outperform your toughest competition and help you achieve your strategic
-        goals in short period of time.
-      </p>
-      <span>Want us to contact you?</span>
-      <form class="form" id="form">
-        <label for="email" class="form__label">
-          <input
-            type="Email"
-            class="form__input"
-            id="email"
-            placeholder="Email"
-        /></label>
-        <button type="submit" class="button">Join</button>
-      </form>
+      <div class="hero__banner">
+        <p class="hero__phrase no-margin">Unhappy with your website?</p>
+        <h2 class="hero__title">We create beautiful and fast web services</h2>
+      </div>
+      <div class="image-container">
+        <img
+          class="hero__image"
+          src="assets/images/heroImage.jpg"
+          alt="team work"
+        />
+      </div>
+
+      <div class="hero__banner">
+        <p class="hero__subtitle">Story,emotion and purpose</p>
+        <p class="hero__text">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <form class="form" id="Form">
+          <span class="form__question">Want us to contact you?</span>
+          <div class="form__field">
+            <label for="Email" class="form__label">
+              <input
+                type="email"
+                class="form__input"
+                id="Email"
+                placeholder="Email"
+            /></label>
+            <button type="submit" class="button button--hero">Join</button>
+          </div>
+        </form>
+      </div>
     </div>
     <main class="service">
       <h3 class="service__title">We offer high demand services</h3>
