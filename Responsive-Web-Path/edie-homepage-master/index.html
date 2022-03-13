@@ -81,7 +81,7 @@
                 id="Email"
                 placeholder="Email"
             /></label>
-            <button type="submit" class="button button--hero">Join</button>
+            <button type="submit" class="button button--position">Join</button>
           </div>
         </form>
       </div>
@@ -196,15 +196,37 @@
       <p class="team__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
-      <div class="team__photos">
-        <img src="assets/images/person1.png" alt="photo person" />
-        <img src="assets/images/person2.png" alt="photo person" />
-        <img src="assets/images/person3.png" alt="photo person" />
+      <div class="photos">
+        <div class="column-55 column-55--flex">
+          <div class="container-photo">
+            <img
+              class="photo"
+              src="assets/images/person3.png"
+              alt="photo person"
+            />
+          </div>
+        </div>
+        <div class="column-45">
+          <div class="container-photo">
+            <img
+              class="photo photo--w90"
+              src="assets/images/person1.png"
+              alt="photo person"
+            />
+          </div>
+          <div class="container-photo">
+            <img
+              class="photo"
+              src="assets/images/person2.png"
+              alt="photo person"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <div class="testimonial">
-      <blockquote class="testimonial__text">
-        <p>
+      <blockquote class="no-margin">
+        <p class="testimonial__text">
           “Fast and outstanding results. Edie understands their customer’s
           needs. They have a young and talented team.”
         </p>
@@ -215,62 +237,75 @@
           src="assets/images/person4.png"
           alt="author testimonial"
         />
-        <p class="author__name">Carlos Tran</p>
-        <p class="author__job">The Decorate Gatsby</p>
+        <div class="author__info">
+          <p class="author__name">Carlos Tran</p>
+          <p class="author__job">The Decorate Gatsby</p>
+        </div>
       </div>
     </div>
 
     <footer class="footer">
       <nav class="nav nav--footer">
         <ul class="menu menu--footer">
-          <li class="menu__item--footer">
-            <a href="#" class="menu__link--footer">Home</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Home</a>
           </li>
-          <li class="menu__item--footer">
-            <a href="#" class="menu__link--footer">Services</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Services</a>
           </li>
-          <li class="menu__item--footer">
-            <a href="#" class="menu__link--footer">Our Works</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Our Works</a>
           </li>
-          <li class="menu__item--footer">
-            <a href="#" class="menu__link--footer">Clients</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Clients</a>
           </li>
-          <li class="menu__item--footer">
-            <a href="#" class="menu__link--footer">Contact</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
           </li>
         </ul>
       </nav>
-      <section>
-        <h4>Edie</h4>
+      <section class="brand">
+        <h4 class="brand__title">Edie</h4>
         <nav class="social">
           <div class="social__item">
             <a href="#" class="social__link"
-              ><img src="assets/icons/instagram.svg" alt="instagram"
+              ><img
+                class="social__icon"
+                src="assets/icons/instagram.svg"
+                alt="instagram"
             /></a>
           </div>
           <div class="social__item">
             <a href="#" class="social__link"
-              ><img src="assets/icons/linkedin.svg" alt="linkedin"
+              ><img
+                class="social__icon"
+                src="assets/icons/linkedin.svg"
+                alt="linkedin"
             /></a>
           </div>
           <div class="social__item">
             <a href="#" class="social__link"
-              ><img src="assets/icons/twitter.svg" alt="twitter"
+              ><img
+                class="social__icon"
+                src="assets/icons/twitter.svg"
+                alt="twitter"
             /></a>
           </div>
         </nav>
       </section>
-      <div>
-        <p>Want us to contact you?</p>
-        <form class="form" id="form">
-          <label for="email" class="form__label">
-            <input
-              type="Email"
-              class="form__input"
-              id="email"
-              placeholder="Email"
-          /></label>
-          <button type="submit" class="button">Join</button>
+      <div class="contact">
+        <p class="contact__title">Want us to contact you?</p>
+        <form class="form form--footer">
+          <div class="form__field">
+            <label for="email" class="form__label">
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="Email"
+            /></label>
+            <button type="submit" class="button button--position">Join</button>
+          </div>
         </form>
       </div>
       <p class="copyright">
