@@ -3,13 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="devchallenges.png" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
+    <link rel="icon" href="assets/images/devchallenges.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +21,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header wrapper">
+    <header class="header">
       <h1 class="title">Edie</h1>
       <nav class="nav">
         <a href="#" class="nav__link">Home</a>
@@ -36,9 +30,14 @@
         <a href="#" class="nav__link">Clients</a>
         <a href="#" class="nav__link">Contact</a>
       </nav>
-      <img class="menu-icon" src="assets/icons/menu.svg" alt="menu" />
-      <nav class="nav-mobile">
-        <ul class="menu">
+      <img
+        class="menu-icon"
+        id="menu-icon"
+        src="assets/icons/menu.svg"
+        alt="menu"
+      />
+      <nav class="nav-mobile" id="nav-mobile">
+        <ul class="menu menu--header">
           <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
           <li class="menu__item">
             <a href="#" class="menu__link">Services</a>
@@ -312,5 +311,7 @@
         created by <span class="coder">Luimac09 </span>- devChallenges.io
       </p>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
