@@ -34,26 +34,46 @@ img {
 .no-margin {
   margin: 0;
 }
-.wrapper {
-  width: 96%;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0.6em;
 }
+
 .title {
   font-family: var(--headingFont);
   font-weight: 800;
   font-size: 2.4rem;
   color: var(--darkergray);
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0.5em 2em;
+    margin-bottom: 3em;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+}
 .nav {
   display: none;
+}
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-right: 0.8em;
+  font-weight: 500;
+  color: var(--darkergray);
+}
+.nav__link--last {
+  margin-right: 0;
+}
+@media screen and (min-width: 1024px) {
+  .nav__link {
+    font-size: 2.4rem;
+  }
 }
 .nav-mobile {
   position: absolute;
@@ -69,6 +89,7 @@ img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+
 .nav-mobile--visible {
   visibility: visible;
   opacity: 1;
@@ -79,6 +100,14 @@ img {
 .menu--header {
   padding-left: 0;
   text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .nav {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+  }
 }
 .hero {
   width: 100%;
@@ -103,7 +132,6 @@ img {
 }
 .hero__title {
   width: 27.2rem;
-  max-width: 543px;
 }
 .hero__subtitle {
   width: 227px;
@@ -120,11 +148,47 @@ img {
 }
 .hero__text {
   width: 275px;
-  max-width: 366px;
   font-size: 1.2rem;
   line-height: 18px;
   color: var(--darkgray);
   margin-bottom: 0;
+}
+@media screen and (min-width: 576px) {
+  .hero__banner {
+    margin-left: 3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 0.5em 2em;
+  }
+  .hero__phrase {
+    font-size: 1.8rem;
+  }
+  .hero__title {
+    width: 543px;
+    font-size: 4.8rem;
+    line-height: 72px;
+  }
+  .hero__subtitle {
+    width: 366px;
+    padding-right: 0;
+    font-size: 4.8rem;
+    line-height: 72px;
+  }
+  .hero__text {
+    width: 366px;
+    font-size: 1.8rem;
+    line-height: 27px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__banner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .form {
   margin-top: 2em;
@@ -176,7 +240,14 @@ img {
   top: 0.28em;
   right: 0.4em;
 }
-
+@media screen and (min-width: 1024px) {
+  .form__question {
+    font-size: 1.4rem;
+  }
+  .form__field {
+    width: 350px;
+  }
+}
 .service {
   width: calc(100% - 2em);
   margin-left: auto;
