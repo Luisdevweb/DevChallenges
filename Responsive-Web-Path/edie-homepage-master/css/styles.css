@@ -131,11 +131,10 @@ img {
   line-height: 36px;
 }
 .hero__title {
-  width: 27.2rem;
+  max-width: 27.2rem;
 }
 .hero__subtitle {
-  width: 227px;
-  max-width: 366px;
+  max-width: 227px;
   padding-right: 2em;
 }
 .image-container {
@@ -167,18 +166,18 @@ img {
     font-size: 1.8rem;
   }
   .hero__title {
-    width: 543px;
+    max-width: 543px;
     font-size: 4.8rem;
     line-height: 72px;
   }
   .hero__subtitle {
-    width: 366px;
+    max-width: 366px;
     padding-right: 0;
     font-size: 4.8rem;
     line-height: 72px;
   }
   .hero__text {
-    width: 366px;
+    max-width: 366px;
     font-size: 1.8rem;
     line-height: 27px;
   }
@@ -202,7 +201,7 @@ img {
 }
 .form__field {
   position: relative;
-  width: 291px;
+  max-width: 291px;
 }
 .form__label {
   width: 100%;
@@ -255,7 +254,7 @@ img {
 }
 .service__title {
   margin-left: 1.5em;
-  width: 259px;
+  max-width: 259px;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -263,7 +262,7 @@ img {
 }
 .card {
   position: relative;
-  width: 341px;
+  max-width: 341px;
   height: 422px;
   padding: 2em 1.2em 2em 2em;
   margin-bottom: 1em;
@@ -298,7 +297,7 @@ img {
   color: var(--darkergray);
 }
 .card__text {
-  width: 273px;
+  max-width: 273px;
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--darkgray);
@@ -335,8 +334,7 @@ img {
   margin-bottom: 3em;
 }
 .gallery__title {
-  width: 267px;
-  max-width: 448px;
+  max-width: 267px;
   margin-left: 1.5em;
   font-weight: 500;
   font-size: 2.4rem;
@@ -377,14 +375,14 @@ img {
 }
 .team__subtitle {
   margin-top: 0;
-  width: 280px;
+  max-width: 280px;
   font-size: 3.6rem;
   font-weight: 500;
   line-height: 54px;
   color: var(--darkergray);
 }
 .team__text {
-  width: 273px;
+  max-width: 273px;
   font-size: 1.6rem;
   line-height: 24px;
   color: var(--darkgray);
@@ -506,7 +504,7 @@ img {
 }
 
 .contact {
-  width: 290px;
+  max-width: 290px;
   margin-left: auto;
   margin-right: auto;
 }
