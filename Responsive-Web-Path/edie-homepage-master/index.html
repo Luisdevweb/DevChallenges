@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <h1 class="title">Edie</h1>
       <nav class="nav">
-        <a href="#" class="nav__link">Home</a>
-        <a href="#" class="nav__link">Services</a>
-        <a href="#" class="nav__link">Out Works</a>
-        <a href="#" class="nav__link">Clients</a>
-        <a href="#" class="nav__link nav__link--last">Contact</a>
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#service" class="nav__link">Services</a>
+        <a href="#gallery" class="nav__link">Out Works</a>
+        <a href="#clients" class="nav__link">Clients</a>
+        <a href="#contact" class="nav__link nav__link--last">Contact</a>
       </nav>
       <img
         class="menu-icon"
@@ -38,15 +38,21 @@
       />
       <nav class="nav-mobile" id="nav-mobile">
         <ul class="menu menu--header">
-          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Services</a>
+            <a href="#home" class="menu__link">Home</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Out Works</a>
+            <a href="#service" class="menu__link">Services</a>
           </li>
-          <li class="menu__item"><a href="#" class="menu__link">Clients</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+          <li class="menu__item">
+            <a href="#gallery" class="menu__link">Out Works</a>
+          </li>
+          <li class="menu__item">
+            <a href="#clients" class="menu__link">Clients</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact" class="menu__link">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -63,7 +69,7 @@
         />
       </div>
 
-      <div class="hero__banner">
+      <div class="hero__banner" id="contact">
         <p class="hero__subtitle">Story,emotion and purpose</p>
         <p class="hero__text">
           We help transform your ideas into real world applications that will
@@ -85,7 +91,7 @@
         </form>
       </div>
     </div>
-    <main class="service wrapper">
+    <main class="service wrapper" id="service">
       <h3 class="service__title">We offer high demand services</h3>
       <div class="row">
         <article class="card">
@@ -140,7 +146,7 @@
         </article>
       </div>
     </main>
-    <section class="gallery wrapper">
+    <section class="gallery wrapper" id="gallery">
       <h3 class="gallery__title">Good design means good business</h3>
       <div class="row">
         <figure class="screenshot no-margin screenshot--first">
@@ -234,7 +240,7 @@
           </div>
         </div>
       </section>
-      <div class="testimonial">
+      <div class="testimonial" id="clients">
         <blockquote class="no-margin">
           <p class="testimonial__text">
             “Fast and outstanding results. Edie understands their customer’s
@@ -261,19 +267,19 @@
             <nav class="nav nav--footer">
               <ul class="menu menu--footer">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Home</a>
+                  <a href="#home" class="menu__link">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Services</a>
+                  <a href="#service" class="menu__link">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Our Works</a>
+                  <a href="#gallery" class="menu__link">Our Works</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Clients</a>
+                  <a href="#clients" class="menu__link">Clients</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Contact</a>
+                  <a href="#contact-footer" class="menu__link">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -310,7 +316,7 @@
             </section>
           </div>
           <div class="column-33">
-            <div class="contact">
+            <div class="contact" id="contact-footer">
               <p class="contact__title">Want us to contact you?</p>
               <form class="form form--footer">
                 <div class="form__field">

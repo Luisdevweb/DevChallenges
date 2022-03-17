@@ -288,6 +288,13 @@ img {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  .service__title {
+    max-width: 346px;
+    font-size: 3.6rem;
+    line-height: 54px;
+  }
+}
 .card {
   position: relative;
   max-width: 341px;
@@ -416,6 +423,13 @@ img {
     bottom: 1.3em;
     right: 1em;
     position: absolute;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery__title {
+    max-width: 448px;
+    font-size: 3.6rem;
+    line-height: 54px;
   }
 }
 
