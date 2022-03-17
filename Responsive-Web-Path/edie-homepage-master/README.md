@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luismac09.github.io/DevChallenges/Responsive-Web-Path/edie-homepage-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/1c7ruAMQGq7i47X6WO1V">
       Solution
     </a>
     <span> | </span>
@@ -44,7 +44,6 @@
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JS](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [Sass](https://sass-lang.com/guide)
 
 ## Features
 
