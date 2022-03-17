@@ -373,21 +373,7 @@ img {
   border-radius: 12px;
   opacity: 80%;
 }
-@media screen and (min-width: 576px) {
-  .gallery {
-    padding: 0;
-  }
-  .gallery__title {
-    margin-left: 0;
-  }
-  .screenshot {
-    width: 50%;
-    max-width: 545px;
-  }
-  .gallery__image {
-    width: 98%;
-  }
-}
+
 .caption__type {
   font-size: 1.2rem;
   font-weight: 300;
@@ -404,6 +390,33 @@ img {
   text-decoration: none;
   color: var(--lightblue);
   font-weight: 500;
+}
+@media screen and (min-width: 576px) {
+  .gallery {
+    padding: 0;
+  }
+  .gallery__title {
+    margin-left: 0;
+  }
+  .screenshot {
+    width: 50%;
+    max-width: 600px;
+  }
+  .screenshot--first,
+  .screenshot--third {
+    margin-top: 6.5em;
+  }
+  .gallery__image {
+    width: 98%;
+  }
+  .screenshot--fourth {
+    position: relative;
+  }
+  .gallery__link {
+    bottom: 1.3em;
+    right: 1em;
+    position: absolute;
+  }
 }
 
 .team {
