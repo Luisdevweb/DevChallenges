@@ -196,23 +196,11 @@ option:checked {
   font-size: 1.6rem;
   color: var(--darkergray);
 }
-.counter__decrease,
-.counter__increase {
-  width: 19px;
-  height: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 @media screen and (min-width: 992px) {
   .counter {
     width: 134px;
     height: 52px;
-  }
-  .counter__decrease,
-  .counter__increase {
-    width: 21px;
-    height: 21px;
   }
 }
 .checkout__content {
@@ -235,7 +223,7 @@ option:checked {
 }
 .form__fieldset {
   margin-bottom: 3.5em;
-  font-size: l.4rem;
+  font-size: 1.4rem;
 }
 .form__title {
   padding-left: 0;
@@ -266,7 +254,7 @@ option:checked {
 }
 .form__icon {
   position: absolute;
-  top: 3.2em;
+  top: 2.8em;
   left: 0.6em;
   width: 15px;
   height: 13px;
@@ -345,7 +333,7 @@ option:checked {
   .form__icon {
     width: 20px;
     height: 16px;
-    top: 4.1em;
+    top: 3em;
   }
   .form__input,
   .form__select {
@@ -394,6 +382,11 @@ option:checked {
 }
 .button--increase,
 .button--decrease {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   font-size: 1.8rem;
   color: var(--gray);
@@ -404,6 +397,15 @@ option:checked {
 .button--decrease:active {
   outline: 1px solid var(--lightorange);
 }
+
+@media screen and (min-width: 992px) {
+  .button--increase,
+  .button--decrease {
+    width: 21px;
+    height: 21px;
+  }
+}
+
 .button--continue {
   width: 169px;
   height: 54px;

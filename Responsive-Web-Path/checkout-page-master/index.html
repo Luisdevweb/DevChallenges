@@ -36,17 +36,13 @@
                     $54.99<span class="product__price">$94.99</span>
                   </p>
                   <div class="counter">
-                    <div class="counter__decrease">
-                      <button type="button" class="button button--decrease">
-                        -
-                      </button>
-                    </div>
-                    <p class="counter__number">1</p>
-                    <div class="counter__increase">
-                      <button type="button" class="button button--increase">
-                        +
-                      </button>
-                    </div>
+                    <button type="button" class="button button--decrease">
+                      -
+                    </button>
+                    <p class="counter__number" data-num="1">1</p>
+                    <button type="button" class="button button--increase">
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
@@ -64,17 +60,13 @@
                     $74.99<span class="product__price">$124.99</span>
                   </p>
                   <div class="counter">
-                    <div class="counter__decrease">
-                      <button type="button" class="button button--decrease">
-                        -
-                      </button>
-                    </div>
-                    <p class="counter__number">1</p>
-                    <div class="counter__increase">
-                      <button type="button" class="button button--increase">
-                        +
-                      </button>
-                    </div>
+                    <button type="button" class="button button--decrease">
+                      -
+                    </button>
+                    <p class="counter__number" data-num="2">1</p>
+                    <button type="button" class="button button--increase">
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
@@ -245,10 +237,10 @@
 
                   <label for="country" class="form__label">
                     <select id="country" title="countries" class="form__select">
-                      <option disabled selected>Your country...</option>
-                      <option>Perú</option>
-                      <option>United States</option>
-                      <option>México</option>
+                      <option value="">Your country...</option>
+                      <option value="1">Perú</option>
+                      <option value="2">United States</option>
+                      <option value="3">México</option>
                     </select>
                   </label>
                   <img

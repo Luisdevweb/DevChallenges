@@ -1,5 +1,6 @@
 const counter = document.querySelectorAll(".counter");
-let number = 1;
+let number1 = 1,
+  number2 = 1;
 counter.forEach((item) =>
   item.addEventListener("click", (e) => {
     if (e.target.classList.contains("button--decrease")) {
@@ -12,13 +13,25 @@ counter.forEach((item) =>
 );
 
 const decreaseNumber = (e) => {
-  const counterNumber = e.target.parentElement.nextElementSibling;
-  number > 1 ? number-- : (number = 1);
-  counterNumber.textContent = number;
+  const counterNumber = e.target.nextElementSibling;
+  if (counterNumber.getAttribute("data-num") === "1") {
+    number1 > 1 ? number1-- : (number1 = 1);
+    counterNumber.textContent = number1;
+  }
+  if (counterNumber.getAttribute("data-num") === "2") {
+    number2 > 1 ? number2-- : (number2 = 1);
+    counterNumber.textContent = number2;
+  }
 };
 
 const increaseNumber = (e) => {
-  const counterNumber = e.target.parentElement.previousElementSibling;
-  number < 10 ? number++ : (number = 10);
-  counterNumber.textContent = number;
+  const counterNumber = e.target.previousElementSibling;
+  if (counterNumber.getAttribute("data-num") === "1") {
+    number1 < 10 ? number1++ : (number1 = 10);
+    counterNumber.textContent = number1;
+  }
+  if (counterNumber.getAttribute("data-num") === "2") {
+    number2 < 10 ? number2++ : (number2 = 10);
+    counterNumber.textContent = number2;
+  }
 };
