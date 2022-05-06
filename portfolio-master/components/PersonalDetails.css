@@ -1,0 +1,72 @@
+:host {
+  --fw: 500;
+  --fs: 1.8rem;
+  --br: 12px;
+  --white: hsl(0, 0%, 100%);
+  --gray-dark: hsla(0, 0%, 31%, 1);
+  --gray: hsla(0, 0%, 51%, 1);
+}
+.personal-details {
+  display: flex;
+  align-items: center;
+  max-width: 104rem;
+  height: 30rem;
+  padding: 1.4em;
+  background-color: var(--white);
+  border-radius: var(--br);
+}
+.photo {
+  width: 27.18rem;
+  height: 26.61rem;
+  object-fit: cover;
+  border-radius: var(--br);
+}
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 2.4rem;
+  font-weight: var(--fw);
+  color: var(--gray-dark);
+  margin-bottom: 0.1em;
+}
+.subtitle {
+  margin-top: 0;
+  font-size: var(--fs);
+  font-weight: var(--fw);
+  color: var(--gray);
+}
+.email,
+.phone {
+  font-size: var(--fs);
+  font-weight: var(--fw);
+  color: var(--gray-dark);
+}
+.email {
+  margin-bottom: 0.2em;
+}
+.phone {
+  margin-top: 0;
+}
+.icon {
+  width: 1.7rem;
+  margin-right: 0.4em;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  font-size: var(--fs);
+  font-weight: var(--fw);
+  color: var(--gray);
+  line-height: 22px;
+}

@@ -1,1 +1,1 @@
-import "./component/PersonalDetails.js";
+import "./components/PersonalDetails.js";

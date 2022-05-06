@@ -1,6 +1,11 @@
 html {
   font-size: 10px;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat.ttf) format("ttf");
+  font-display: swap;
+}
 body {
   margin: 0;
   background-color: hsla(0, 0%, 95%, 1);
