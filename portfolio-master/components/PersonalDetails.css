@@ -14,6 +14,7 @@
   padding: 1.4em;
   background-color: var(--white);
   border-radius: var(--br);
+  margin-bottom: 3em;
 }
 .photo {
   width: 27.18rem;

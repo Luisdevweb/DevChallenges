@@ -1,6 +1,6 @@
-export const createNode = (str) => {
+export const createNode = (str,classes) => {
   const node = new DOMParser()
     .parseFromString(str, "text/html")
-    .body.querySelector(".personal-details");
+    .body.firstElementChild;
   return node;
 };
