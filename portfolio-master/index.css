@@ -11,3 +11,24 @@ body {
   background-color: hsla(0, 0%, 95%, 1);
   font-family: "Montserrat", sans-serif;
 }
+.card {
+  width: 101.8rem;
+  height: 18.5rem;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+}
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1em 0 0 1em;
+  color: hsl(0, 0%, 31%);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex-basis: 50%;
+}

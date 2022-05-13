@@ -25,7 +25,7 @@ class PersonalProject extends HTMLElement {
             <span class="tag">#Responsive</span>
           </div>
           <div class="body">
-          <h2 class="title">Recipe Blog</h2>
+          <h2 class="title">${this.title}</h2>
           <p class="description">In this project, I work with HTML and CSS to create a responsive page .
           The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id.
            Quisque feugiat malesuada molestie. </p>
