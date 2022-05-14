@@ -1,0 +1,41 @@
+.post-preview {
+  position: relative;
+  width: 104.6rem;
+  height: 30.8rem;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2em;
+  margin-bottom: 3em;
+}
+
+.post-title,
+.blog-name,
+.post-text,
+.web-domain {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 20px;
+}
+.blog-name {
+  color: hsl(0, 0%, 88%);
+}
+.post-title {
+  width: 16.8rem;
+  font-size: 2.4rem;
+  line-height: 30px;
+  color: hsl(0, 0%, 20%);
+}
+.post-text {
+  width: 46.5rem;
+  color: hsl(0, 0%, 51%);
+}
+.web-domain {
+  color: hsl(214, 84%, 56%);
+}
+.post-image {
+  width: 53.7rem;
+  height: 30.9rem;
+  position: absolute;
+  right: 0;
+  top: 2em;
+}

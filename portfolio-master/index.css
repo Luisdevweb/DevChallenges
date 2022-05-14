@@ -16,6 +16,7 @@ body {
   height: 18.5rem;
   border-radius: 12px;
   background-color: hsl(0, 0%, 100%);
+  margin-bottom: 3em;
 }
 .card-title {
   font-size: 1.8rem;
