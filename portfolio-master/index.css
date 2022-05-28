@@ -6,6 +6,11 @@ html {
   src: url(./assets/fonts/Montserrat.ttf) format("ttf");
   font-display: swap;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf) format("ttf");
+  font-display: swap;
+}
 body {
   margin: 0;
   background-color: hsla(0, 0%, 95%, 1);
